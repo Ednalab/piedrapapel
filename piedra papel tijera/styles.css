@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a; /* Fondo gris oscuro para el contenedor */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid #00bcd4; /* Borde azul claro */
+}
+
+h1 {
+    color: #00bcd4; /* Título en azul claro */
+}
+
+p {
+    color: #ffffff; /* Texto en blanco */
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.choice-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #00bcd4; /* Color de fondo botón en azul claro */
+    color: #fff; /* Texto blanco */
+}
+
+.choice-btn:hover {
+    background-color: #008c9e; /* Color al pasar el mouse */
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+.result {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #889bfc; /* Color rosa para resultados */
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+/* Animación de texto para el resultado */
+.result:nth-child(2) {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
